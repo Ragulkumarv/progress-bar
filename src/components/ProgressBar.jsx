@@ -1,5 +1,5 @@
 const ProgressBar = () => {
-  return <div>ProgressBar</div>;
+  return <div className="progress-bar">ProgressBar</div>;
 };
 
 export default ProgressBar;

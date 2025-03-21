@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.progress-bar {
+  font-size: 2rem;
+  font-weight: bold;
+}
