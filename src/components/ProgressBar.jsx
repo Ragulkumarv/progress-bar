@@ -15,9 +15,9 @@ const ProgressBar = () => {
     }, 100);
   }, []);
   return (
-    <section className="progress-bar">
+    <section className="progress__bar--bar-backdrop">
       <div
-        className="progress-fill"
+        className="progress__bar--fill"
         style={{ transform: `translateX(${progress}%)` }}
       ></div>
     </section>

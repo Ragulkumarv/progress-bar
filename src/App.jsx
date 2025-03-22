@@ -8,16 +8,16 @@ const App = () => {
     setBars((prev) => [...prev, { id: `bar-${prev.length + 1}` }]);
   };
   return (
-    <section className="container">
-      <h1>Progress Bar</h1>
-      <button className="add-btn" onClick={() => handleAdd()}>
+    <section className="progress__bar--root-container">
+      <h1 className="progress__bar--title">Progress Bar</h1>
+      <button onClick={() => handleAdd()} className="progress__bar--add">
         Add
       </button>
-      <div className="bars-container">
+      <section className="progress__bar--bars-container">
         {bars.map((item) => (
           <ProgressBar key={item.id} />
         ))}
-      </div>
+      </section>
     </section>
   );
 };
