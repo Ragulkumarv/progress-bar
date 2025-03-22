@@ -13,6 +13,8 @@ const ProgressBar = () => {
         return prev + 5;
       });
     }, 100);
+
+    return () => clearInterval(interval);
   }, []);
   return (
     <section className="progress__bar--bar-backdrop">
