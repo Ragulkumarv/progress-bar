@@ -20,7 +20,7 @@ const ProgressBar = () => {
     <section className="progress__bar--bar-backdrop">
       <div
         className="progress__bar--fill"
-        style={{ transform: `translateX(${progress}%)` }}
+        style={{ transform: `translateX(${progress}%)` }} //used transform since its more performance oriented. using width will make browser to repaint the css again & again
       ></div>
     </section>
   );
